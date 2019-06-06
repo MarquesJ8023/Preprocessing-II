@@ -6,6 +6,13 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @phone {
+      flex-direction: column;
+        .first-image {
+          order: -1;
+        }
+    }
+
    
     
     .text-content {
@@ -52,6 +59,10 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+
+    @media @phone {
+      flex-direction: column;
+    }
 
     .destination {
       width: 30%;

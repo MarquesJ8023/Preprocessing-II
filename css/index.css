@@ -224,6 +224,14 @@ header .nav-container nav a {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width:500) {
+  .home .content-section {
+    flex-direction: column;
+  }
+  .home .content-section .first-image {
+    order: -1;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
@@ -259,6 +267,11 @@ header .nav-container nav a {
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width:500) {
+  .home .content-pick {
+    flex-direction: column;
+  }
 }
 .home .content-pick .destination {
   width: 30%;
