@@ -285,3 +285,9 @@ header .nav-container nav a {
   text-align: center;
   padding: 10px;
 }
+@media (max-width:500) {
+  .home .content-pick .destination {
+    width: 100%;
+    padding: 0px 60px;
+  }
+}
