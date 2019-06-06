@@ -193,6 +193,20 @@ header .nav-container nav a {
   text-decoration: none;
   color: black;
 }
+@media (max-width:500) {
+  header .nav-container {
+    padding: 0px;
+  }
+  header .nav-container .nav-container {
+    flex-direction: column;
+    width: 100%;
+  }
+  header .nav-container .nav-container nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;

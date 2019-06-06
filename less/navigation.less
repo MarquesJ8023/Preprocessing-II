@@ -22,7 +22,21 @@ header {
             }
  
         }
-    }
+        
+
+        @media @phone{
+            padding: 0px;
+
+            .nav-container{
+                flex-direction: column; 
+                width: 100%;
+              
+                nav {
+                    .flex(space-evenly, center);
+                }
+             }
+        }
+    }   
  }
  
  
