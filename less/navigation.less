@@ -1,1 +1,42 @@
 // Navigation Styles here
+header {
+    width: 100%;
+    padding: 36px 0px;
+    border-bottom: 2px dashed lightgrey;
+    .flex(center, center);
+    .nav-container {
+        width: 800px;
+        .flex(space-between, center);
+ 
+        h1 {
+ 
+        }
+        nav {
+            .flex(flex-end, center);
+ 
+            a {
+                margin-left: 32px;
+                font-size: 1.6rem;
+                text-decoration: none;
+                color: black;
+            }
+ 
+        }
+        
+
+        @media @phone{
+            padding: 0px;
+
+            .nav-container{
+                flex-direction: column; 
+                width: 100%;
+              
+                nav {
+                    .flex(space-evenly, center);
+                }
+             }
+        }
+    }   
+ }
+ 
+ 

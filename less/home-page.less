@@ -6,6 +6,13 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @phone {
+      flex-direction: column;
+        .first-image {
+          order: -1;
+        }
+    }
+
    
     
     .text-content {
@@ -53,9 +60,21 @@
     display: flex;
     justify-content: space-between;
 
+    @media @phone {
+      flex-direction: column;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      .btn{
+        .btn-style(teal);
+      }
+      @media @phone {
+        width: 100%;
+        padding: 0px 60px;
+      }
     }
+
   }
 }// home
